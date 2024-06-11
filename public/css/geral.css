@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*ESTILO DAS BARRAS DE NAVEGAÇÃO*/
+header{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #1e89bb;
+}
+.navbar ul li:hover{
+    border-bottom: 1px solid #1e89bb;
+}
+
+
+/*ESTILO DO HEADER COM DEGRADÊ*/
+
+
+
+/*ESTILO DOS CARDS*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 210px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+}
+.cards .card:hover{
+    transform: scale(1.02);
+}
+.cards .card h2{
+    color: #1e89bb;
+    text-align: center;
+    line-height: 20px;
+    
+}
+.card p{
+    color: #1e89bb;
+    line-height: 16px;
+    text-align: center;
+}
+.cards .card img{
+    width: 100px;
+}
+
+
+/*
+#wave {
+    position: relative;
+    background: #e0efe3;
+  }
+  #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 340px;
+    height: 80px;
+    background-color: white;
+    right: -5px;
+    top: 40px;
+  }
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 300px;
+    height: 70px;
+    background-color: #e0efe3;
+    left: 0;
+    top: 27px;
+  }
+*/
