@@ -11,6 +11,15 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+section{
+    margin-bottom: 100px;
+}
+h2{
+    text-align: left;
+}
+p{
+    font-size: 18px;
+}
 
 /*ESTILO DAS BARRAS DE NAVEGAÇÃO*/
 header{
@@ -56,17 +65,18 @@ header .container{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     justify-content: center;
     gap: 8px;
 }
 .cards .card{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 160px;
-    height: 210px;
-    padding: 10px;
+    max-width: 300px;
+    height: 200px;
+    padding: 10px 20px 10px 10px;
     border: none;
     background-color: white;
     border-top-left-radius: 30px;
@@ -83,7 +93,7 @@ header .container{
     color: #1e89bb;
     text-align: center;
     line-height: 20px;
-    
+    margin-bottom: 10px; 
 }
 .card p{
     color: #1e89bb;
@@ -91,35 +101,5 @@ header .container{
     text-align: center;
 }
 .cards .card img{
-    width: 100px;
+    width: 140px;
 }
-
-
-/*
-#wave {
-    position: relative;
-    background: #e0efe3;
-  }
-  #wave:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 340px;
-    height: 80px;
-    background-color: white;
-    right: -5px;
-    top: 40px;
-  }
-  #wave:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 300px;
-    height: 70px;
-    background-color: #e0efe3;
-    left: 0;
-    top: 27px;
-  }
-*/

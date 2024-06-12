@@ -1,62 +1,135 @@
 <%- include('layouts/header') %>
 <body class="home">
    <%- include('layouts/navbar') %>
+   
     <main class="slogan">
-        <h1>BEM-VINDO AO DISTRITO DE SAÚDE RURAL</h1>
-        <div class="container bemvindo">         
+        <div class="container bemvindo">
+            <h1>BEM-VINDO AO DISTRITO DE SAÚDE RURAL</h1>
+        </div>
+
+        <div class="wave">
+            <img src="/img/wave.png" alt="Efeito de onda">
+        </div>
+
+        <div class="degradeBg"></div>
+        <div class="bg"></div>
+    </main>
+
+
+
+
+    <main class="mainHome container">
+        <section>
+            <h2>ESTRUTURA GERENCIAL</h2>
             <nav>
                 <div class="cards">
                     <div class="card">
                         <img src="/img/tecnologia.gif" alt="">
                         <div>
                             <h2>GEIND</h2>
-                            <p>Algum texto com uma explicação breve sobre a gerência GEADM</p>
+                            <p>(Gerência de Inteligência de Dados)</p>
                         </div>
                     </div>
-    
+
                     <div class="card">
                         <img src="/img/gerencia.gif" alt="">
                         <div>
                             <h2>GEADM</h2>
-                            <p>Algum texto com uma explicação breve sobre a gerência GEADM</p>
+                            <p>(Gerência de Administração)</p>
                         </div>
                     </div>
-    
+
                     <div class="card">
                         <img src="/img/nurse.gif" alt="">
                         <div>
                             <h2>GEATS</h2>
-                            <p>Algum texto com uma explicação breve sobre a gerência GEADM</p>
+                            <p>(Gerência de Atenção a Saúde)</p>
                         </div>
                     </div>
-    
+
                     <div class="card">
                         <img src="/img/pesquisa.gif" alt="">
                         <div>
                             <h2>GEVISA</h2>
-                            <p>Algum texto com uma explicação breve sobre a gerência GEADM</p>
+                            <p>(Gerência de Vigilância)</p>
                         </div>
                     </div>
                 </div>
-            </nav> 
-        </div>
+            </nav>
+        </section>
+    
 
-        <div class="wave">
-            <img src="/img/wave.png" alt="Efeito de onda">
-        </div>
+
+
+
+        <section>
+            <div class="imgHome">
+                <article>
+                    <h2>O QUE É O DISTRITO RURAL?</h2>
+                    <p>O Departamento do Distrito Rural é administrado pelo diretor Rubens Souza. Caracteriza-se como Órgão público e estabelecimento tipo Central de Gestão em Saúde segundo Cadastro Nacional de Estabelecimento(CNES).
+
+                        O distrito atende cerca de 25 mil pessoas cadastradas nas Unidades Básicas de Saúdes em áreas rurais: terrestres, fluviais e ribeirinhas.
+                        
+                        A atuação das  Unidades de Saúde é peculiar para cada localidade, tornando-se necessário estratégias diferenciadas para o alcance das metas em saúde em cada comunidade. Dessa forma, a missão do DDISAR é levar Assistência aos moradores de cada região, facilitando o acesso aos programas de saúde e informação de prevenção às diversas doenças.</p>
+                </article>
+
+                <div class="equipe">
+                    <img src="/img/medico.png" alt="acs">
+                    <div class="wave">
+                        <img src="/img/wave.png" alt="Efeito de onda">
+                    </div>
+                </div>
+            </div> 
+        </section>     
     </main>
 
-    <div class="container">
-        <div class="imgHome">
-            <article>
-                <h2>OBJETIVO DO DISA RURAL</h2>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </article>
-            <div class="equipe">
-                <img src="/img/medico.png" alt="acs">
+    <section class="unidades">
+        <div class="container">
+            <div>
+                <h2 class="text-white">UNIDADES DE SAÚDE</h2>
             </div>
-            
+
+            <div class="unidade">
+                <div id="terrestre" class="card p-3">
+                    <p><strong>TERRESTRES:</strong></p>
+                    <div>
+                        <img src="" alt="">
+                        <ul>
+                            <li>Ada Viana</li>
+                            <li>Ephigênio</li>
+                            <li>Pau Rosa</li>
+                            <li>São Pedro</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="ribeirinha"  class="card p-3">
+                    <p><strong>RIBEIRINHAS:</strong></p>
+                    <div>
+                        <img src="" alt="">
+                        <ul>
+                            <li>Ada Viana</li>
+                            <li>Ephigênio</li>
+                            <li>Pau Rosa</li>
+                            <li>São Pedro</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="fluvial"  class="card p-4">
+                    <p><strong>FLUVIAIS:</strong></p>
+                    <div>
+                        <img src="" alt="">
+                        <ul>
+                            <li>Ada Viana</li>
+                            <li>Ephigênio</li>
+                            <li>Pau Rosa</li>
+                            <li>São Pedro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div> 
-    </div>
+    </section>
 </body>
 <%- include('layouts/footer') %>
