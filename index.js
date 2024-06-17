@@ -9,8 +9,18 @@ app.use(bodyParser.urlencoded({'extended': false}))
 //CONFIGURAÇÕES DO BANCO...
 
 
+
+
+
 app.get('/', (req, res)=>{
     res.render('home')
+})
+
+
+
+
+app.get('/publicacoes', (req, res)=>{
+    res.render('navbarViews/publicacoes')
 })
 
 app.listen(3000)

@@ -1,10 +1,13 @@
 <%- include('layouts/header') %>
 <body class="home">
-   <%- include('layouts/navbar') %>
+   <header><%- include('layouts/navbar') %></header>
    
     <main class="slogan">
         <div class="container bemvindo">
-            <h1>BEM-VINDO AO DISTRITO DE SAÚDE RURAL</h1>
+            <div>
+                <h1>BEM-VINDO AO DISTRITO DE SAÚDE RURAL</h1>
+                <p>Alguma frase introdutória</p>
+            </div>
         </div>
 
         <div class="wave">
@@ -89,11 +92,13 @@
                 <h2 class="text-white">UNIDADES DE SAÚDE</h2>
             </div>
 
-            <div class="unidade">
-                <div id="terrestre" class="card p-3">
+            <div class="unidades">
+                <div id="terrestre" class="card p-3 unidade">
                     <p><strong>TERRESTRES:</strong></p>
                     <div>
-                        <img src="" alt="">
+                        <div class="containerImgUnd">
+                            <img src="/img/unidades/unidade terrestre.jpeg" alt="Unidades Ribeirinha">
+                        </div>
                         <ul>
                             <li>Ada Viana</li>
                             <li>Ephigênio</li>
@@ -103,10 +108,12 @@
                     </div>
                 </div>
 
-                <div id="ribeirinha"  class="card p-3">
+                <div id="ribeirinha"  class="card p-3 unidade">
                     <p><strong>RIBEIRINHAS:</strong></p>
                     <div>
-                        <img src="" alt="">
+                        <div class="containerImgUnd">
+                            <img src="/img/unidades/unidade ribeirinha.jpeg" alt="Unidades Ribeirinha">
+                        </div>
                         <ul>
                             <li>Ada Viana</li>
                             <li>Ephigênio</li>
@@ -116,10 +123,12 @@
                     </div>
                 </div>
 
-                <div id="fluvial"  class="card p-4">
+                <div id="fluvial"  class="card p-4 unidade">
                     <p><strong>FLUVIAIS:</strong></p>
                     <div>
-                        <img src="" alt="">
+                        <div class="containerImgUnd">
+                            <img src="/img/unidades/unidade ribeirinha.jpeg" alt="Unidades Ribeirinha">
+                        </div>
                         <ul>
                             <li>Ada Viana</li>
                             <li>Ephigênio</li>

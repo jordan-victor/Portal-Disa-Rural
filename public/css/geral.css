@@ -50,10 +50,10 @@ header .container{
 }
 .navbar ul li a{
     text-decoration: none;
-    color: #1e89bb;
+    color: #006999;
 }
 .navbar ul li:hover{
-    border-bottom: 1px solid #1e89bb;
+    border-bottom: 1px solid #0c3c53;
 }
 
 
@@ -69,6 +69,7 @@ header .container{
     justify-content: center;
     gap: 8px;
 }
+/*
 .cards .card{
     display: flex;
     flex-direction: row;
@@ -84,22 +85,45 @@ header .container{
     transition: all 0.2s ease;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.247);
+    background-image: linear-gradient(70deg, #0c3c53,#0076ac);
+}
+*/
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: 260px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.247);
+    background-image: linear-gradient(70deg, #0c3c53,#0076ac);
 }
 .cards .card:hover{
     transform: scale(1.02);
 }
 .cards .card h2{
-    color: #1e89bb;
+    color:white;
     text-align: center;
     line-height: 20px;
     margin-bottom: 10px; 
 }
 .card p{
-    color: #1e89bb;
+    color: white;
     line-height: 16px;
     text-align: center;
 }
 .cards .card img{
-    width: 140px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
 }
