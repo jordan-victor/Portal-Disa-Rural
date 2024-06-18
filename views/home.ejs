@@ -1,8 +1,8 @@
 <%- include('layouts/header') %>
 <body class="home">
-   <header><%- include('layouts/navbar') %></header>
-   
     <main class="slogan">
+        <%- include('layouts/navbar') %>
+
         <div class="container bemvindo">
             <div>
                 <h1>BEM-VINDO AO DISTRITO DE SAÚDE RURAL</h1>
@@ -15,7 +15,7 @@
         </div>
 
         <div class="degradeBg"></div>
-        <div class="bg"></div>
+        <div class="bg" id="bg"></div>
     </main>
 
 
@@ -86,59 +86,43 @@
         </section>     
     </main>
 
-    <section class="unidades">
-        <div class="container">
+
+
+
+
+    <!--UNIDADES-->
+    <section>
+        <div class="container unidadesContainer">
             <div>
-                <h2 class="text-white">UNIDADES DE SAÚDE</h2>
+                <h2>UNIDADES DE SAÚDE</h2>
             </div>
 
             <div class="unidades">
-                <div id="terrestre" class="card p-3 unidade">
-                    <p><strong>TERRESTRES:</strong></p>
+                <div id="terrestre" class="unidade">
+                    <div class="containerImgUnd" id="containerImgT"></div>
                     <div>
-                        <div class="containerImgUnd">
-                            <img src="/img/unidades/unidade terrestre.jpeg" alt="Unidades Ribeirinha">
-                        </div>
-                        <ul>
-                            <li>Ada Viana</li>
-                            <li>Ephigênio</li>
-                            <li>Pau Rosa</li>
-                            <li>São Pedro</li>
-                        </ul>
+                        <p><strong>TERRESTRES:</strong></p>
+                        <p>Ada Viana, Ephigênio, Pau Rosa e São Pedro</p>
                     </div>
                 </div>
 
-                <div id="ribeirinha"  class="card p-3 unidade">
-                    <p><strong>RIBEIRINHAS:</strong></p>
+                <div id="ribeirinha"  class="unidade">
+                    <div class="containerImgUnd" id="containerImgR"></div>
                     <div>
-                        <div class="containerImgUnd">
-                            <img src="/img/unidades/unidade ribeirinha.jpeg" alt="Unidades Ribeirinha">
-                        </div>
-                        <ul>
-                            <li>Ada Viana</li>
-                            <li>Ephigênio</li>
-                            <li>Pau Rosa</li>
-                            <li>São Pedro</li>
-                        </ul>
+                        <p><strong>RIBEIRINHAS:</strong></p>
+                        <p>Auxiliadora, Fátima, Livramento</p>
                     </div>
                 </div>
 
-                <div id="fluvial"  class="card p-4 unidade">
-                    <p><strong>FLUVIAIS:</strong></p>
+                <div id="fluvial"  class="unidade">
+                    <div class="containerImgUnd" id="containerImgF"></div>
                     <div>
-                        <div class="containerImgUnd">
-                            <img src="/img/unidades/unidade ribeirinha.jpeg" alt="Unidades Ribeirinha">
-                        </div>
-                        <ul>
-                            <li>Ada Viana</li>
-                            <li>Ephigênio</li>
-                            <li>Pau Rosa</li>
-                            <li>São Pedro</li>
-                        </ul>
+                        <p><strong>FLUVIAIS:</strong></p>
+                        <p>Dr.Antônio, Dr.Ney Lacerda</p>
                     </div>
                 </div>
             </div>
         </div> 
-    </section>
+    </section>    
 </body>
-<%- include('layouts/footer') %>
+<%- include('layouts/footer') %> 
