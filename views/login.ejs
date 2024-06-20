@@ -1,3 +1,60 @@
 <%- include('layouts/header') %>
-<%- include('layouts/footer') %>
+<body id="login">
+    <header>
+        <%- include('layouts/navbar') %>    
+    </header>
+ 
+    
 
+    <div class="container">
+        <main class="formContainer">       
+            <form action="">
+                <div class="sloganLogin">
+                    <div class="container bemvindo">
+                        <div>
+                            <h1>BEM-VINDO AO <span style="color: rgb(92, 255, 190);">DISTRITO DE SAÚDE RURAL</span></h1>
+                        </div>
+                    </div>
+            
+                    <div class="wave">
+                        <img src="/img/wave.png" alt="Efeito de onda">
+                    </div>
+    
+            
+                    <div class="degradeBg"></div>
+                    <div class="bg" id="bg"></div>
+                </div>
+
+
+
+
+                <div class="inputsContainer">
+                    <div class="inputContainer">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="user" id="user" placeholder="Usuário" required>
+                    </div>
+                    <div class="inputContainer">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="" id="password" placeholder="Senha" required>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 5px; width: 300px;">
+                        <input type="checkbox" name="lembrar" id="lembrar" style="width: 15px;">
+                        <label for="lembrar">Lembrar senha</label>
+                    </div>
+                </div>
+
+                
+
+                <div>
+                    <button type="submit">ACESSAR</button>
+                </div>
+
+                <nav>
+                    <a href="">Esqueci minha senha</a>
+                    <a href="">Fazer cadastro</a>
+                </nav>
+            </form>
+        </main> 
+    </div>      
+</body>
+<%- include('layouts/footer') %>

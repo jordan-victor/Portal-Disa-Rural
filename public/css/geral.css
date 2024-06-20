@@ -6,16 +6,23 @@
 html{
     width: 100%;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 body{
     width: 100%;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 section{
     margin-bottom: 100px;
 }
-h2{
+body h2{
     text-align: left;
+    color: #00533d;
 }
 p{
     font-size: 18px;
@@ -62,8 +69,8 @@ header .container{
     text-decoration: none;
     color: #ffffff;
 }
-.navbar ul li:hover{
-    border-bottom: 1px solid #ffffff;
+.navbar ul li a:hover{
+    color: rgb(92, 255, 190);
 }
 
 
@@ -124,7 +131,7 @@ header .container{
 /*ESTILO DO FOOTER*/
 footer{
     width: 100vw;
-    height: 400px;
+    height: 300px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -141,7 +148,6 @@ footer .degradeFooter{
     position: absolute;
     width: 100%;
     height: 100%;
-    bottom: 5px;
     z-index: 3;
     opacity: 0.9;    
 }
@@ -154,5 +160,4 @@ footer .bgFooter{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    bottom: 5px;
 }

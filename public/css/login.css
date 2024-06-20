@@ -1,0 +1,157 @@
+#login{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#login header{
+    background-image: linear-gradient(70deg,  #00533d, #006c4f);
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.formContainer form > div{
+    width: 300px;
+}
+#login input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    color: #00533d;
+    font-size: 16px;
+}
+#login form nav{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.inputContainer{
+    width: 300px;
+    height: 50px;
+    background-color: #dfeeea;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 5px;
+    gap: 5px;
+}
+.inputContainer i{
+    font-size: 25px;
+    color: #00533d;
+}
+
+#login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158);
+    width: 400px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.inputsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+button[type="submit"]{
+    background-image: linear-gradient(70deg,  #00533d, #007b5a);
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.sloganLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.sloganLogin .degradeBg{
+    background-image: linear-gradient(70deg,  #00533d, #006c4f);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    opacity: 0.9;    
+}
+
+.sloganLogin .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/boto.jpg');
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.sloganLogin h1{
+    color: white;
+    text-align: center;
+}
+
+.sloganLogin .wave{
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    z-index: 10;
+}
+.sloganLogin .wave2{
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    z-index: 10;
+}
+
+.sloganLogin .wave img{
+    width: 100%;
+    animation: wave 3s infinite ease-in-out alternate;
+}
+.sloganLogin .wave2 img{
+    width: 100%;
+    animation: wave2 3s infinite ease-in-out alternate;
+}
+.wave2{
+    transform: rotate(180deg);
+}
+
+@keyframes wave2{
+    0%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(8px);
+    }
+}
