@@ -1,3 +1,4 @@
+/*ESTILO DAS TELAS DE CADASTRO E LOGIN*/
 #login{
     min-height: 100vh;
     display: flex;
@@ -5,6 +6,10 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background-image: url('/img/bgOnda.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #login header{
@@ -61,6 +66,7 @@
     padding-bottom: 20px;
     border-radius: 30px;
     overflow: hidden;
+    background-color: white;
 }
 .inputsContainer{
     display: flex;
@@ -70,13 +76,15 @@
     gap: 5px;
 }
 
-button[type="submit"]{
+#login button[type="submit"]{
     background-image: linear-gradient(70deg,  #00533d, #007b5a);
     color: white;
     border: none;
-    padding: 10px 30px 10px 30px;
+    width: 300px;
+    height: 50px;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 5s ease;
 }
 
 

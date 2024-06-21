@@ -8,7 +8,7 @@
 
     <div class="container">
         <main class="formContainer">       
-            <form action="">
+            <form action="/authenticate" method="POST">
                 <div class="sloganLogin">
                     <div class="container bemvindo">
                         <div>
@@ -20,7 +20,6 @@
                         <img src="/img/wave.png" alt="Efeito de onda">
                     </div>
     
-            
                     <div class="degradeBg"></div>
                     <div class="bg" id="bg"></div>
                 </div>
@@ -35,7 +34,7 @@
                     </div>
                     <div class="inputContainer">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="" id="password" placeholder="Senha" required>
+                        <input type="password" name="password" id="password" placeholder="Senha" required>
                     </div>
                     <div style="display: flex; align-items: center; gap: 5px; width: 300px;">
                         <input type="checkbox" name="lembrar" id="lembrar" style="width: 15px;">
@@ -45,6 +44,7 @@
 
                 
 
+                
                 <div>
                     <button type="submit">ACESSAR</button>
                 </div>
