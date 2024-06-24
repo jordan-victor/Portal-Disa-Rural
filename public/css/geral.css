@@ -138,6 +138,11 @@ footer{
     align-items: center;
 }
 footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container{
     z-index: 6;
     position: absolute;
     width: 100%;
