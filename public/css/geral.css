@@ -74,6 +74,60 @@ header .container{
 }
 
 
+
+
+/*ESTILO DO SLOGAN DO CABEÇALHO*/
+.slogan{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 550px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slogan .degradeBg{
+    background-image: linear-gradient(70deg,  #00533d, #006c4f);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 5px;
+    z-index: 3;
+    opacity: 0.9;    
+}
+.slogan .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/boto.jpg');
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 5px;
+}
+.slogan > h1{
+    color: white;
+    text-align: center;
+}
+.slogan .bemvindo div img{
+    border-radius: 50%;
+    width: 200px;
+}
+
+
+
+
+
 /*ESTILO DOS CARDS*/
 .cards{
     display: flex;
@@ -124,6 +178,10 @@ header .container{
     height: 130px;
     border-radius: 50%;
 }
+.cards a{
+    text-decoration: none;
+}
+
 
 
 
@@ -131,7 +189,7 @@ header .container{
 /*ESTILO DO FOOTER*/
 footer{
     width: 100vw;
-    height: 300px;
+    padding: 100px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -141,12 +199,12 @@ footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 footer .container{
     z-index: 6;
     position: absolute;
     width: 100%;
-    height: 100;
 }
 footer .degradeFooter{
     background-image: linear-gradient(70deg,  #00533d, #006c4f);
@@ -165,4 +223,13 @@ footer .bgFooter{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media(max-width:992px){
+    footer .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    footer{
+        height: 450px;
+    }   
 }

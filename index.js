@@ -12,11 +12,17 @@ app.use(bodyParser.urlencoded({'extended': false}))
 
 
 
-//IMPORTANDO CONTROLLER LOGIN
+//IMPORTANDO CONTROLLERS 
 const login = require('./controllers/loginController')
 app.use('/', login)
 
+const geindController = require('./controllers/gerencias/geindController')
+app.use('/', geindController)
 
+
+
+
+//HOME
 app.get('/', (req, res)=>{
     res.render('home')
 })

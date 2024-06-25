@@ -1,0 +1,67 @@
+<%- include('../layouts/header') %>
+<body class="geind">
+    <!-------------------------------1.CABEÇALHO------------------------------------------->
+    <main class="slogan">
+        <%- include('../layouts/navbar') %>
+
+        <div class="container bemvindo">
+            <div>
+                <h1>BEM-VINDO AO <span style="color: rgb(92, 255, 190);">GEIND RURAL</span></h1>
+                <p>Gerência de Inteligência de Dados</p>
+            </div>
+
+            <div>
+                <img src="/img/tecnologia.gif" alt="Gif tecnlogia">
+            </div>
+        </div>
+
+        <div class="wave">
+            <img src="/img/wave.png" alt="Efeito de onda">
+        </div>
+
+        <div class="degradeBg"></div>
+        <div class="bg" id="bg"></div>
+    </main>
+
+
+
+
+    <!-------------------------------2.PRINCIPAL------------------------------------------->
+    <main class="container">
+        <section>
+            <h2>ÁREAS:</h2>
+            <nav>
+                <div class="cards">
+                    <a href="/geind">
+                        <div class="card">
+                            <p class="iconeGerencias"><i class="fa-solid fa-phone"></i></p>
+                            <div>
+                                <h2>CONTATO</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card">
+                        <p class="iconeGerencias"><i class="fa-solid fa-file"></i></p>
+                        <div>
+                            <h2>SOLICITAÇÕES DE DOCUMENTOS</h2>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="iconeGerencias"><i class="fa-solid fa-share"></i></p>
+                        <div>
+                            <h2>ENVIO DE DOCUMENTOS</h2>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="iconeGerencias"><i class="fa-solid fa-computer"></i></p>
+                        <div>
+                            <h2>TECNOLOGIAS</h2>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </main>
+<%- include('../layouts/footer') %>
