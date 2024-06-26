@@ -16,6 +16,21 @@
     background-image: linear-gradient(70deg,  #00533d, #006c4f);
 }
 
+#login .inputsContainer #buscaCpf{
+    background-image: linear-gradient(70deg,  #00533d, #007b5a);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
 .formContainer{
     display: flex;
     justify-content: center;
@@ -50,7 +65,7 @@
     gap: 5px;
 }
 .inputContainer i{
-    font-size: 25px;
+    font-size: 20px;
     color: #00533d;
 }
 

@@ -30,6 +30,15 @@
 
                 <div class="inputsContainer">
                     <div class="inputContainer">
+                        <i class="fa-solid fa-id-card"></i>
+                        <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="Informe o seu CPF" required>
+                    </div>
+                    <div style="width: 100%;">
+                        <div onclick="buscaCpf()" id="buscaCpf">Buscar CPF</div>
+                    </div>
+
+
+                    <div class="inputContainer">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" name="user" id="user" placeholder="Usuário" required>
                     </div>
@@ -66,6 +75,13 @@
                 </nav>
             </form>
         </main> 
-    </div>      
+    </div>
+    
+    
+
+
+    <form action="/buscarCpf" method="POST" id="formCpf2" style="display: none!important;">
+        <input type="hidden" id="cpfCopia" name="cpfBusca" style="display: none!important;">
+    </form>
 </body>
 <%- include('layouts/footer') %>
