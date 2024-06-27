@@ -6,7 +6,21 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({'extended': false}))
+
+
+
+
+
 //CONFIGURAÇÕES DO BANCO...
+const { where } = require('sequelize')
+const connection = require('./database/login/user.js')
+connection.authenticate()
+.then(()=>{
+    console.log('Conexão realizada')
+})
+.catch((erro)=>{
+    console.log(erro)
+})
 
 
 
