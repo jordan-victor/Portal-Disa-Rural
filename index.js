@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({'extended': false}))
 //CONFIGURAÇÕES DO BANCO...
 const { where } = require('sequelize')
 const connection = require('./database/login/user.js')
-connection.authenticate()
+connection.connection.authenticate()
 .then(()=>{
     console.log('Conexão realizada')
 })
